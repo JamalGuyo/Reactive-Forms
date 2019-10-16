@@ -1,4 +1,35 @@
+<nav class="navbar navbar-expand-sm navbar-dark bg-light">
+  <div class="container">
+    <a class="navbar-brand">R_Forms</a>
+    <button
+      class="navbar-toggler"
+      data-toggle="collapse"
+      data-target="#navbarnav"
+    >
+      <span class="navbar-toggler-icon"></span>
+    </button>
+    <div class="collapse navbar-collapse" id="navbarnav">
+      <ul>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/home']"
+            routerLinkActive="{ exact: true }"
+            >Home</a
+          >
+        </li>
+        <li class="nav-item">
+          <a
+            class="nav-link"
+            [routerLink]="['/form']"
+            routerLinkActive="{ exact: true }"
+            >Form</a
+          >
+        </li>
+      </ul>
+    </div>
+  </div>
+</nav>
 <div class="container">
-  <app-customer></app-customer>
+  <router-outlet></router-outlet>
 </div>
-
